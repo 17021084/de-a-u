@@ -1,0 +1,41 @@
+.frame-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: white;
+    border-radius: 0 0 0 10px;
+    overflow: hidden;
+    .header-items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        flex:1;
+        border-right: 1px solid rbg(245,245,245);
+        position: relative;
+        color:#555;
+        .alert-circle-icon {
+            position: absolute;
+            background-color: green;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid white;
+            top: 10px;
+            right:20px;
+        }
+        &.date-block {
+            font-size: 20px;
+            color: black;
+            font-weight: 400;
+        }
+        &.icon-block:hover {
+            cursor: pointer;
+            background-color: #eee;
+        }
+    }
+}
